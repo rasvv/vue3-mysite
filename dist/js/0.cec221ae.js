@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkvue3_mysite"]=self["webpackChunkvue3_mysite"]||[]).push([[0],{1e3:function(e,n,t){t.r(n),t.d(n,{default:function(){return f}});var s=t(3396);const u=(0,s._)("div",{class:"main-body"}," Contacts ",-1);function c(e,n,t,c,r,a){const i=(0,s.up)("v-container");return(0,s.wg)(),(0,s.j4)(i,{class:"d-flex justify-center"},{default:(0,s.w5)((()=>[u])),_:1})}var r={},a=t(89);const i=(0,a.Z)(r,[["render",c]]);var f=i}}]);
+//# sourceMappingURL=0.cec221ae.js.map
