@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Программирование", 
+		"description": "Программированием ", 
+		"link": "Photo/Dasha",
+		"count": 20
+	},
+	{
+		"title": "Вика", 
+		"description": "assets/img/Photo/Tory/Tory1/1.jpg", 
+		"link": "Photo/Tory/Tory1",
+		"count": 12
+	},
+	{
+		"title": "Вика в студии", 
+		"description": "assets/img/Photo/Tory/Tory2/1.jpg", 
+		"link": "Photo/Tory/Tory2",
+		"count": 16
+	},
+	{
+		"title": "Дети", 
+		"description": "assets/img/Photo/Children/14.jpg", 
+		"link": "Photo/Children",
+		"count": 26
+	},
+	{
+		"title": "Разное", 
+		"description": "assets/img/Photo/Other/6.jpg", 
+		"link": "Photo/Other",
+		"count": 7
+	}	
+]

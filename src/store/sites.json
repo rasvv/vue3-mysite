@@ -27,6 +27,6 @@
 		"title": "Калькулятор кода РАО", 
 		"src": "assets/img/sites/ккРао.png", 
 		"description": "Специальное ПО для работников атомной отрасли. Написано на Vue", 
-		"link": "https://calc-rao.ru/"
+		"link": "https://calcrao.ru/"
 	}
 ]

@@ -15,11 +15,11 @@ import MyFooter from './components/MyFooter.vue'
 // import MainPage from './components/MainPage.vue'
 
 export default {
-	name: 'App',
-	components: {
-		MyHeader,
-		MyFooter
-	}
+  name: 'App',
+  components: {
+    MyHeader,
+    MyFooter
+  }
 
 }
 </script>
@@ -30,6 +30,7 @@ export default {
   padding: 0
   -webkit-box-sizing: border-box
   box-sizing: border-box
+  font-size: 1 rem
 
 #app 
   font-family: Avenir, Helvetica, Arial, sans-serif
@@ -43,6 +44,15 @@ export default {
 
 html
   overflow-y: hidden !important
+  font-size: 150%
+  @media only screen and (min-width: 600px) 
+    font-size: 94%
+  
+  @media only screen and (min-width: 1000px) 
+    font-size: 98%
+
+  @media only screen and (min-width: 1200px) 
+      font-size: 100%
 
 .v-container
   max-width: 100vw !important  

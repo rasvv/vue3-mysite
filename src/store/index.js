@@ -4,6 +4,7 @@ import photosJson from './photos.json'
 import hobbyJson from './hobby.json'
 import handmadeJson from './handmade.json'
 import dysnaiJson from './dysnai2005.json'
+import aboutmeJson from './aboutme.json'
 
 
 export default createStore({
