@@ -1,100 +1,64 @@
 <template>
-  <v-container class="ma-4" height="100vh">
+  <v-container class="ma-4" height="95vh">
     <v-row class="buttons">
       <v-btn @click="onSetView('links')" class="primary">Назад</v-btn>
       <v-btn @click="onSetView('slides')" class="primary">Слайды</v-btn>
     </v-row>
-    <v-row>
-
-    <v-img
-      v-if="src !== ''"
-      :src="src"
-      :lazy-src="src"
-      class="full-picture"
-      max-height="80vh"
-      contain
-      @click="onClose"
-    >
-    </v-img>
-    <!-- <v-row v-if="src === ''" justify="space-around" >
-      <v-col
-        v-for="n in photosCount"
-        :key="n"
-        class="d-flex align-content-center justify-space-around flex-wrap"
-        cols="auto"
+    <v-row class="osnova">
+      <v-img
+        v-if="src !== ''"
+        :src="src"
+        :lazy-src="src"
+        class="full-picture"
+        contain
+        @click="onClose"
       >
-        <v-img
-          :src="require(`../assets/img/${path}/${n}.${extension}`)"
-          :lazy-src="`${path}/${n}.${extension}`"
-          height="371"
-          width="371"
-          cover
-          @click="
-            onClickPicture(require(`../assets/img/${path}/${n}.${extension}`))
-          "
-        >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-    </v-row> -->
-    <v-row   v-if="src === ''"  justify="space-around" >
-      <v-card
-        v-for="n in photosCount"
-        :key="n"
-        :width="400"
-        class="ma-4"
-      >
-        <v-card class="pa-6">
-          <v-card
-            height="550px"
-            class="ma-1 pa-3 d-flex flex-column"
-          >
-            <v-img
-              :src="require(`../assets/img/${path}/${n}.${extension}`)"
-              position="center center"
-              height="350px"
-              alt="logo"
-              class="bg"
-              cover
-              @click="
-            onClickPicture(require(`../assets/img/${path}/${n}.${extension}`))
-          "
+      </v-img>
 
-            >
-            </v-img>
+      <v-row v-if="src === ''" justify="space-around">
+        <v-card v-for="n in photosCount" :key="n" :width="400" class="ma-4">
+          <v-card class="pa-6">
+            <v-card height="550px" class="ma-1 pa-3 d-flex flex-column">
+              <v-img
+                :src="require(`../assets/img/${path}/${n}.${extension}`)"
+                position="center center"
+                height="55vh"
+                width="25vw"
+                alt="logo"
+                class="bg"
+                cover
+                @click="
+                  onClickPicture(
+                    require(`../assets/img/${path}/${n}.${extension}`)
+                  )
+                "
+              >
+              </v-img>
+            </v-card>
           </v-card>
         </v-card>
-      </v-card>
-    </v-row>    
-  </v-row>
-
+      </v-row>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters, mapActions } from 'vuex';
 
 export default {
   data: () => ({
     photosCount: 0,
-    cols: "auto",
-    path: "",
-    extension: "jpg",
+    cols: 'auto',
+    path: '',
+    extension: 'jpg',
     counterClick: 0,
-    src: "",
+    src: '',
   }),
   computed: {
-    ...mapGetters(["getPhotoCurrentPage"]),
+    ...mapGetters(['getPhotoCurrentPage']),
   },
   methods: {
-    ...mapActions(["updateView"]),
+    ...mapActions(['updateView']),
     onSetView(view) {
       this.updateView(view);
       console.log(view);
@@ -112,7 +76,7 @@ export default {
       this.src = src;
     },
     onClose() {
-      this.src = "";
+      this.src = '';
     },
   },
   mounted() {

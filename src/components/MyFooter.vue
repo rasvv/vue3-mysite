@@ -1,22 +1,15 @@
 <template>
-  <v-container
-    class="bg"
-    height="20"
-  >
-  <v-row class="d-flex justify-center">
+  <v-container class="bg" height="20">
+    <v-row class="d-flex justify-center">
       <v-col cols="3" class="d-flex">
-				<v-img
-          height="26"
+        <v-img
+          height="20"
           width="100"
           contain
           :src="require('../assets/img/Logo.png')"
         ></v-img>
-
       </v-col>
-      <v-col
-        class="primary text-center white--text"
-        cols="9"
-      >
+      <v-col class="primary text-center white--text" cols="9">
         2020 - {{ new Date().getFullYear() }}
       </v-col>
     </v-row>
@@ -24,13 +17,11 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style lang='sass' scoped>
-  .bg
-    background-color: darkblue
-    color: #fff
+<style lang="sass" scoped>
+.bg
+  background-color: darkblue
+  color: #fff
 </style>

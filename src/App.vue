@@ -2,29 +2,27 @@
   <v-app class="d-flex justify-center">
     <MyHeader />
     <v-main>
-      <router-view/>  
+      <router-view />
     </v-main>
     <MyFooter />
   </v-app>
 </template>
 
-
 <script>
-import MyHeader from './components/MyHeader.vue'
-import MyFooter from './components/MyFooter.vue'
+import MyHeader from './components/MyHeader.vue';
+import MyFooter from './components/MyFooter.vue';
 // import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    MyFooter
-  }
-
-}
+    MyFooter,
+  },
+};
 </script>
 
-<style lang='sass'>
+<style lang="sass">
 *
   margin: 0 !important
   padding: 0
@@ -32,7 +30,7 @@ export default {
   box-sizing: border-box
   font-size: 1 rem
 
-#app 
+#app
   font-family: Avenir, Helvetica, Arial, sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
@@ -45,21 +43,21 @@ export default {
 html
   overflow-y: hidden !important
   font-size: 150%
-  @media only screen and (min-width: 600px) 
+  @media only screen and (min-width: 600px)
     font-size: 94%
-  
-  @media only screen and (min-width: 1000px) 
+
+  @media only screen and (min-width: 1000px)
     font-size: 98%
 
-  @media only screen and (min-width: 1200px) 
+  @media only screen and (min-width: 1200px)
       font-size: 100%
 
 .v-container
-  max-width: 100vw !important  
+  max-width: 100vw !important
   height: calc(100vh - 130px)
   padding: 0
 
-// .v-application--wrap 
+// .v-application--wrap
 //   min-height: 78vh
 
 .avatar
@@ -71,11 +69,11 @@ html
 .imgintext
   display: flex
   justify-content: space-around
-  margin-bottom: 20px 
+  margin-bottom: 20px
   flex-wrap: wrap
   gap: 10px
 
-.v-main 
+.v-main
   min-height: calc(100vh - 110px)
   align-items: center
   overflow-y: auto
@@ -86,15 +84,15 @@ html
 .buttons
   display: flex
   justify-content: space-between
-  margin-bottom: 10px  
 
-.v-card 
+
+.v-card
   overflow: hidden
   transition: .2s ease-in-out
 
 .backgrounding
   background-color: #ddd
-  
+
 .bg
   background-color: #ddd
   border: 1px solid #ddd
@@ -104,14 +102,17 @@ html
   &:hover
     transform: scale(1.05)
 
+.osnova
+  position: relative
+
 .full-picture
-   position: fixed
-   width: 100vw
-   height: 100vh
-   left: 0
-   top: 0
-   z-index: 999
-   background-color: #fff
+  position: absolute
+  width: 100vw
+  height: 100vh
+  left: 0
+  top: 0
+  z-index: 999999
+  background-color: #fff
 
 .text-h5
   background-color: rgba(#FFF, 0.4)

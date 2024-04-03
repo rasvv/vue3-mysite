@@ -7,15 +7,15 @@
 	},
 	{
 		"title": "Вика", 
-		"src": "assets/img/Photo/Tory/Tory1/1.jpg", 
-		"link": "Photo/Tory/Tory1",
-		"count": 12
+		"src": "assets/img/Photo/Tory/Tory/1.jpg", 
+		"link": "Photo/Tory/Tory",
+		"count": 16
 	},
 	{
 		"title": "Вика в студии", 
-		"src": "assets/img/Photo/Tory/Tory2/1.jpg", 
-		"link": "Photo/Tory/Tory2",
-		"count": 16
+		"src": "assets/img/Photo/Tory/Studio/1.jpg", 
+		"link": "Photo/Tory/Studio",
+		"count": 12
 	},
 	{
 		"title": "Дети", 
