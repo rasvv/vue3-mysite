@@ -24,96 +24,100 @@ export default {
 
 <style lang="sass">
 *
-  margin: 0 !important
-  padding: 0
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
-  font-size: 1 rem
+	margin: 0 !important
+	padding: 0
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	font-size: 1 rem
 
 #app
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  overflow: hidden
-  text-align: center
-  color: #2c3e50
+	font-family: Avenir, Helvetica, Arial, sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	overflow: hidden
+	text-align: center
+	color: #2c3e50
 
 
 
 html
-  overflow-y: hidden !important
-  font-size: 150%
-  @media only screen and (min-width: 600px)
-    font-size: 94%
+	overflow-y: hidden !important
+	font-size: 150%
+	@media only screen and (min-width: 600px)
+		font-size: 94%
 
-  @media only screen and (min-width: 1000px)
-    font-size: 98%
+	@media only screen and (min-width: 1000px)
+		font-size: 98%
 
-  @media only screen and (min-width: 1200px)
-      font-size: 100%
+	@media only screen and (min-width: 1200px)
+			font-size: 100%
 
 .v-container
-  max-width: 100vw !important
-  height: calc(100vh - 130px)
-  padding: 0
+	max-width: 100vw !important
+	height: calc(100vh - 130px)
+	padding: 0
 
 // .v-application--wrap
 //   min-height: 78vh
 
 .avatar
-  height: 50vh
-  width: 20vw
-  object-fit: cover
-  object-align: center
+	height: 50vh
+	width: 20vw
+	object-fit: cover
+	object-align: center
 
 .imgintext
-  display: flex
-  justify-content: space-around
-  margin-bottom: 20px
-  flex-wrap: wrap
-  gap: 10px
+	display: flex
+	justify-content: space-around
+	margin-bottom: 20px
+	flex-wrap: wrap
+	gap: 10px
 
 .v-main
-  min-height: calc(100vh - 110px)
-  align-items: center
-  overflow-y: auto
+	min-height: calc(100vh - 110px)
+	align-items: center
+	overflow-y: auto
 
 .row
-  justify-content: space-around
+	justify-content: space-around
 
 .buttons
-  display: flex
-  justify-content: space-between
+	display: flex
+	justify-content: space-between
 
 
 .v-card
-  overflow: hidden
-  transition: .2s ease-in-out
+	overflow: hidden
+	transition: .2s ease-in-out
 
 .backgrounding
-  background-color: #ddd
+	background-color: #ddd
 
 .bg
-  background-color: #ddd
-  border: 1px solid #ddd
+	background-color: #ddd
+	border: 1px solid #ddd
 
-.v-image
-  transition: .2s ease-in-out
-  &:hover
-    transform: scale(1.05)
+// .v-image
+// 	transition: .2s ease-in-out
+// 	&:hover
+// 		transform: scale(1.05)
 
-.osnova
-  position: relative
 
 .full-picture
-  position: fixed !important
-  width: 100vw
-  height: 100vh
-  left: 0
-  top: 0
-  z-index: 999999
-  background-color: #fff
+	position: fixed !important
+	width: 100vw
+	height: 100vh
+	left: 0
+	top: 0
+	z-index: 9999 !important
+	background-color: #fff
+
+// .picture
+// 	position: relative !important
+// 	top: 0
+// 	left: 0
+// 	z-index: -1
 
 .text-h5
-  background-color: rgba(#FFF, 0.4)
+	background-color: rgba(#FFF, 0.4)
 </style>

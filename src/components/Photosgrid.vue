@@ -4,7 +4,7 @@
       <v-btn @click="onSetView('links')" class="primary">Назад</v-btn>
       <v-btn @click="onSetView('slides')" class="primary">Слайды</v-btn>
     </v-row>
-    <v-row class="osnova">
+    <v-row>
       <v-img
         v-if="src !== ''"
         :src="src"
