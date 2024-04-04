@@ -106,7 +106,7 @@ html
   position: relative
 
 .full-picture
-  position: absolute
+  position: fixed !important
   width: 100vw
   height: 100vh
   left: 0
