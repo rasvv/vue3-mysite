@@ -64,7 +64,7 @@
       path="Hobby/Dysnai"
       n="31"
       extension="jpg"
-      @click="clickCard('disnay')"
+      @click="clickCard('dysnai')"
       description="Я пять раз был на фестивалях молодых атомщиков, как в России, так и в
 					Литве. О моих впечатлениях о поездке на Диснай-2005 можно прочитать здесь"
     />
@@ -101,12 +101,12 @@
 </template>
 
 <script>
-import Programming from './сards/Programming.vue';
-import Photo from './сards/Photo.vue';
-import Handmade from './сards/Handmade.vue';
-import Hobby from './сards/Hobby.vue';
-import AboutMeCard from './сards/AboutMeCard.vue';
-import { mapActions, mapGetters } from 'vuex';
+import Programming from "./сards/Programming.vue";
+import Photo from "./сards/Photo.vue";
+import Handmade from "./сards/Handmade.vue";
+import Hobby from "./сards/Hobby.vue";
+import AboutMeCard from "./сards/AboutMeCard.vue";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   components: {
@@ -118,34 +118,34 @@ export default {
   },
   methods: {
     clickCard(value) {
-      console.log('clickCardValue = ' + value);
-      if (value === 'handmade') {
-        this.setAlbum(this.getHandmadeLinks, '/handmade');
+      console.log("clickCardValue = " + value);
+      if (value === "handmade") {
+        this.setAlbum(this.getHandmadeLinks, "/handmade");
       }
-      if (value === 'photo') {
-        this.setAlbum(this.getPhotosLinks, '/photos');
+      if (value === "photo") {
+        this.setAlbum(this.getPhotosLinks, "/photos");
       }
-      if (value === 'hobby') {
-        this.setAlbum(this.getHobbyLinks, '/hobby');
+      if (value === "hobby") {
+        this.setAlbum(this.getHobbyLinks, "/hobby");
       }
-      if (value === 'progs') {
-        this.$router.push('/mysites');
+      if (value === "progs") {
+        this.$router.push("/mysites");
       }
-      if (value === 'dysnai') {
-        this.$router.push('/dysnai');
+      if (value === "dysnai") {
+        this.$router.push("/dysnai");
       }
     },
-    ...mapActions(['updateAlbum', 'updateView']),
+    ...mapActions(["updateAlbum", "updateView"]),
     setAlbum(album, page) {
-      console.log('album = ' + album);
-      console.log('page = ' + page);
+      console.log("album = " + album);
+      console.log("page = " + page);
       this.updateAlbum(album);
-      this.updateView('links');
+      this.updateView("links");
       this.$router.push(page);
     },
   },
   computed: {
-    ...mapGetters(['getHobbyLinks', 'getHandmadeLinks', 'getPhotosLinks']),
+    ...mapGetters(["getHobbyLinks", "getHandmadeLinks", "getPhotosLinks"]),
   },
 };
 </script>
