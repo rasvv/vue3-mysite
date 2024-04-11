@@ -5,6 +5,10 @@ import hobbyJson from './hobby.json'
 import handmadeJson from './handmade.json'
 import dysnaiJson from './dysnai2005.json'
 import aboutmeJson from './aboutme.json'
+// import './potreblenie.js'
+import { potreblenie } from './potreblenie'
+import { tarifModule } from './modules/tarifModule'
+import { potreblenieModule } from './modules/potreblenieModule'
 
 
 export default createStore({
@@ -72,7 +76,7 @@ export default createStore({
     updateLH ({ commit}, lh) {
       return commit('setLH', lh)
     }
-},
+	},
   getters: {
     getView: state => state.view,
     getPhotoCurrentPage: state => state.photoCurrentPage,
@@ -91,5 +95,10 @@ export default createStore({
     },
     getFZ: state => state.fz,
     getLH: state => state.lh
+  },
+  modules: {
+    tarifModule: tarifModule,
+    potreblenieModule: potreblenieModule
+
   }
 })

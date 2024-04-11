@@ -1,0 +1,5 @@
+[
+    {"NPP":1,"Data":"2023.07.06","ElT1":4392,"ElT2":1905,"ElT3":5624,"ElT1Raz":0,"ElT2Raz":0,"ElT3Raz":0,"ElT1Sum":0,"ElT2Sum":0,"ElT3Sum":0,"VodHol1":360,"VodGor1":165,"VodHol2":355,"VodGor2":89,"VodHolRaz":0,"VodGorRaz":0,"VodOtv":0,"VodHolSum":0,"VodGorSum":0,"VodOtvSum":0, "ITOGOSchet":0, "ITOGOSum":0},
+    {"NPP":2,"Data":"2023.08.08","ElT1":"4439","ElT2":"1935","ElT3":"5674","ElT1Raz":47,"ElT2Raz":30,"ElT3Raz":50,"ElT1Sum":386.81,"ElT2Sum":78.6,"ElT3Sum":283,"VodHol1":"362","VodGor1":"167","VodHol2":"356","VodGor2":"89","VodHolRaz":3,"VodGorRaz":2,"VodOtv":5,"VodHolSum":152.79,"VodGorSum":486.32,"VodOtvSum":199.85, "ITOGOSchet":1587.37,"ITOGOSum":54313.37},
+    {"NPP":3,"Data":"2023.09.06","ElT1":"4488","ElT2":"1966","ElT3":"5743","ElT1Raz":49,"ElT2Raz":31,"ElT3Raz":69,"ElT1Sum":403.27,"ElT2Sum":81.22,"ElT3Sum":390.54,"VodHol1":"367","VodGor1":"171","VodHol2":"364","VodGor2":"90","VodHolRaz":13,"VodGorRaz":5,"VodOtv":18,"VodHolSum":662.09,"VodGorSum":1215.8,"VodOtvSum":719.46, "ITOGOSchet":3472.38,"ITOGOSum":56198.38}
+]

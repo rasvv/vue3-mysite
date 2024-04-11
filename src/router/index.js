@@ -39,6 +39,11 @@ const routes = [
     path: '/dysnai',
     name: 'dysnai',
     component: () => import('../pages/Dysnai.vue')
+  },
+  {
+    path: '/platezh',
+    name: 'platezh',
+    component: () => import('../components/platezh/Platezh.vue')
   }
 
 ]

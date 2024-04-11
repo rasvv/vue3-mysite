@@ -105,6 +105,7 @@ import Programming from "./сards/Programming.vue";
 import Photo from "./сards/Photo.vue";
 import Handmade from "./сards/Handmade.vue";
 import Hobby from "./сards/Hobby.vue";
+import Platezh from "./platezh/Platezh.vue";
 import AboutMeCard from "./сards/AboutMeCard.vue";
 import { mapActions, mapGetters } from "vuex";
 
@@ -115,6 +116,7 @@ export default {
     Hobby,
     Handmade,
     AboutMeCard,
+    Platezh,
   },
   methods: {
     clickCard(value) {

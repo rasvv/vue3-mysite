@@ -7,6 +7,7 @@
           width="100"
           contain
           :src="require('../assets/img/Logo.png')"
+          @dblclick="this.$router.push('/platezh')"
         ></v-img>
       </v-col>
       <v-col class="primary text-center white--text" cols="9">
@@ -22,6 +23,6 @@ export default {};
 
 <style lang="sass" scoped>
 .bg
-  background-color: darkblue
-  color: #fff
+	background-color: darkblue
+	color: #fff
 </style>
